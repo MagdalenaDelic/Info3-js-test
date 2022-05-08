@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section class="hero-section">
+        <div class="question-tabs">
+          <div class="question-tabs-inner">
+            <button
+              class="button-questions button-active"
+              data-target="#Question1"
+              value="1"
+            >
+              1
+            </button>
+
+            <button class="button-questions" data-target="#Question2" value="2">
+              2
+            </button>
+            <button class="button-questions" data-target="#Question3" value="3">
+              3
+            </button>
+            <button class="button-questions" data-target="#Question4" value="4">
+              4
+            </button>
+          </div>
+        </div>
+        <div class="questions-view">
+          <div class="questions-view-inner">
+            <div class="navigation-buttons">
+              <button class="button previous">Previous</button>
+              <button class="button next">Next</button>
+              <button class="button check nonactive">Check</button>
+
+              <div class="popup">
+                <h2>Your result</h2>
+                <h3 class="result-popup1"></h3>
+                <h3 class="result-popup2"></h3>
+                <h3 class="result-popup3"></h3>
+                <h3 class="result-popup4"></h3>
+                <b class="close">X</b>
+              </div>
+            </div>
+            <div class="question-wrapper">
+              <div id="Question1" class="question-text active">
+                <h2>Question 1</h2>
+
+                <div class="Answers" id="Answers1"></div>
+              </div>
+              <div id="Question2" class="question-text">
+                <h2>Question 2</h2>
+
+                <div class="Answers" id="Answers2"></div>
+              </div>
+              <div id="Question3" class="question-text">
+                <h2>Question 3</h2>
+
+                <div class="Answers" id="Answers3"></div>
+              </div>
+              <div id="Question4" class="question-text">
+                <h2>Question 4</h2>
+
+                <div class="Answers" id="Answers4"></div>
+              </div>
+              <div class="answers-wrapper"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
