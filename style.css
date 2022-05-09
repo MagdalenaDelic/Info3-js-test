@@ -163,6 +163,7 @@ html {
   top: 40%;
   left: 50%;
   text-align: center;
+  line-height: 180%;
   transform: translate(-50%, -30%);
   background-color: #7e04f9;
   z-index: 1;
@@ -175,18 +176,16 @@ html {
   justify-content: center;
   align-items: center;
   padding: 45px;
-  overflow: hidden;
+  /* overflow: hidden; */
   visibility: hidden;
 }
 .close {
   position: absolute;
   top: -15px;
   right: -15px;
-
-  padding: 20px 25px;
-  background-color: white;
+  padding: 20px 38px;
+  background-color: rgba(255, 255, 255, 0.852);
   cursor: pointer;
-  border: 1px solid #7e04f9;
   border-radius: 50%;
   color: #ea48ff;
   font-size: 20px;
@@ -317,7 +316,7 @@ html {
     font-family: "Manrope", sans-serif;
     color: white;
     position: fixed;
-    top: 40%;
+    top: 34%;
     left: 50%;
     text-align: center;
     font-size: 25px;
