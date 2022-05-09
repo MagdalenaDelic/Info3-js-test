@@ -7,12 +7,17 @@
   overflow: hidden;
 }
 
+html {
+  overflow: hidden;
+}
+
 .hero-section {
   background-color: #170b39;
   width: 100vw;
   height: 100vh;
   display: flex;
   overflow: hidden;
+  position: relative;
 }
 
 .hero-section::before {
@@ -26,15 +31,14 @@
   clip-path: circle(10% at 25% 30%);
   overflow: hidden;
 }
-.hero-section::after {
-  content: "";
+.second-circle {
+  height: 300px;
+  width: 300px;
   position: absolute;
+  background: linear-gradient(#6c16ff, #ea48ff);
+  border-radius: 50%;
   bottom: -50px;
-  right: -10px;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(#7f04f9, #ea48ff);
-  clip-path: circle(20% at 75% 80%);
+  right: -100px;
   overflow: hidden;
 }
 
@@ -140,6 +144,8 @@
   font-weight: 100;
   font-size: 20px;
   margin-top: 0px;
+  /* overflow-y: scroll; */
+  overflow-x: hidden;
 }
 
 .answers-wrapper {
@@ -147,6 +153,7 @@
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
   place-items: center;
+  overflow-y: hidden;
 }
 
 .popup {
@@ -193,6 +200,23 @@
 
 .question-text {
   display: none;
+  overflow-y: scroll;
+}
+.question-text.active::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.question-text.active::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+}
+
+.question-text.active::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: transparent;
+  background-color: #ea48ff;
 }
 
 .question-text.active {
